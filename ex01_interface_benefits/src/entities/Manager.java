@@ -3,33 +3,25 @@ package entities;
 import services.Employee;
 
 public class Manager implements Employee {
-	
+
 	private String name;
-	private String function;
-	private int daysWorked;
-	
-	public Manager(String name, String function, int daysWorked) {
+
+	public Manager(String name) {
 		this.name = name;
-		this.function = function;
-		this.daysWorked = daysWorked;
-	}
-	
-	public int getDaysWorked() {
-		return daysWorked;
 	}
 
 	@Override
 	public double calculateSalary() {
-		return 200.00 * daysWorked;
+		return 9000.0;
 	}
 
 	@Override
-	public String getName() {	
+	public String getName() {
 		return name;
 	}
 
 	@Override
 	public String getFunction() {
-		return function;
+		return "Manager";
 	}
 }

@@ -5,22 +5,14 @@ import services.Employee;
 public class Trainee implements Employee{
 
 	private String name;
-	private String function;
-	private int daysWorked;
 	
-	public Trainee(String name, String function, int daysWorked) {
+	public Trainee(String name) {
 		this.name = name;
-		this.function = function;
-		this.daysWorked = daysWorked;
-	}
-	
-	public int getDaysWorked() {
-		return daysWorked;
 	}
 	
 	@Override
 	public double calculateSalary() {
-		return 60.0 * daysWorked;
+		return 2000.0;
 	}
 
 	@Override
@@ -30,7 +22,7 @@ public class Trainee implements Employee{
 
 	@Override
 	public String getFunction() {
-		return function;
+		return "Trainee";
 	}
 
 }
