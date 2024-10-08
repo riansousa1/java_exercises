@@ -19,26 +19,18 @@ public class Engineer implements Employee{
 	}
 
 	@Override
-	public double calculateSalary() {
-		// TODO Auto-generated method stub
-		return 0;
+	public double calculateSalary() {	
+		return 150.00 * daysWorked;
 	}
 
 	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getName() {	
+		return name;
 	}
 
 	@Override
-	public String getFunction() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public String toString() {
-		return "Employee: " + name + ", Function: " + function + ", Salary: " + calculateSalary();
+	public String getFunction() {	
+		return function;
 	}
 
 }

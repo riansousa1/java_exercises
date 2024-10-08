@@ -1,16 +1,18 @@
 package application;
 
-import entities.Manager;
+import entities.Engineer;
+import entities.HealthPlan;
+import services.Benefits;
+import services.Employee;
+import services.EmployeeWithBenefits;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
-		Manager m = new Manager("Rian", "Manager", 5);
 		
 		
-		System.out.println(m);
-
+	
 	}
 
 }

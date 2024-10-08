@@ -8,7 +8,7 @@ public class Trainee implements Employee{
 	private String function;
 	private int daysWorked;
 	
-	public Trainee(String name, int daysWorked) {
+	public Trainee(String name, String function, int daysWorked) {
 		this.name = name;
 		this.function = function;
 		this.daysWorked = daysWorked;
@@ -20,25 +20,17 @@ public class Trainee implements Employee{
 	
 	@Override
 	public double calculateSalary() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 60.0 * daysWorked;
 	}
 
 	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getName() {		
+		return name;
 	}
 
 	@Override
 	public String getFunction() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public String toString() {
-		return "Employee: " + name + ", Function: " + function + ", Salary: " + calculateSalary();
+		return function;
 	}
 
 }

@@ -25,17 +25,11 @@ public class Manager implements Employee {
 
 	@Override
 	public String getName() {	
-		return null;
+		return name;
 	}
 
 	@Override
 	public String getFunction() {
-		return null;
+		return function;
 	}
-	
-	@Override
-	public String toString() {
-		return "Employee: " + name + ", Function: " + function + ", Salary: " + calculateSalary();
-	}
-
 }
