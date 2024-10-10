@@ -34,7 +34,7 @@ public class EmployeeWithBenefits {
 	*/
 	
 	public void displayBenefits() {
-		System.out.println("Benefícios de " + emp.getName() + ":");
+		System.out.println("Benefits from " + emp.getName() + ":");
 		ben.forEach(benefit -> System.out.println(benefit.descriptionBenefits()));
 	}
 	
