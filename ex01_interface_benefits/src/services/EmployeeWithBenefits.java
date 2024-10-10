@@ -15,19 +15,12 @@ public class EmployeeWithBenefits {
 	public void addBenefits(Benefits benefits) {
 		ben.add(benefits);
 	}
-
-	public void removeBenefits(Benefits benefits) {
-		ben.remove(benefits);
-	}
-
-	public List<Benefits> getBenefits() {
-		return ben;
-	}
 	
-	/* stream = fluxo de dados. mapToDouble = transforma os elementos em double
-	 * Benefits::calculateBenefits = para cada elemento da lista, aplique o método
-	 * Soma o total dos valores
-	 * */
+	/* 	stream = fluxo de dados. 
+	 	mapToDouble = transforma os elementos em double
+	  	Benefits::calculateBenefits = para cada elemento da lista, aplique o método 
+	  	sum = soma os valores a cada interação
+	*/
 	 
 	public double totalSalary() {
 		double baseSalary = emp.calculateSalary();
@@ -36,13 +29,16 @@ public class EmployeeWithBenefits {
 		return baseSalary + totalBenefits;
 	}
 
-	public String toString() {
-		StringBuilder benefitsDescriptions = new StringBuilder();
-		for (Benefits benefit: ben) {
-			benefitsDescriptions.append(benefit.descriptionBenefits()).append("\n");
-		}
-		
-		return "Employee: " + emp.getName() + ", Function: " + emp.getFunction() + ", Salary: R$ "
-				+ String.format("%.2f", emp.calculateSalary()) + "\n" + benefitsDescriptions + "\n" + "Benefits Total: " + totalSalary();
+	/* 	forEach = executa algo em cada elemento da lista
+	  	ben -> = para o parametro bem, execute... 
+	*/
+	
+	public void displayBenefits() {
+		System.out.println("Benefícios de " + emp.getName() + ":");
+		ben.forEach(benefit -> System.out.println(benefit.descriptionBenefits()));
+	}
+	
+	public Employee getEmp() {
+		return emp;
 	}
 }

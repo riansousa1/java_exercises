@@ -5,6 +5,10 @@ import services.Benefits;
 public class MealVoucher implements Benefits {
 
 	private double value;
+	
+	public MealVoucher(double value) {
+		this.value = value;
+	}
 
 	@Override
 	public double calculateBenefits() {
@@ -13,7 +17,7 @@ public class MealVoucher implements Benefits {
 
 	@Override
 	public String descriptionBenefits() {
-		return "Benefit description: R$ " + value;
+		return "MealVoucher price: R$ " + value;
 	}
 
 }

@@ -17,7 +17,7 @@ public class ValeTransport implements Benefits {
 
 	@Override
 	public String descriptionBenefits() {
-		return "Benefits description: CPTM";
+		return "ValeTransport price: R$ " + value;
 	}
 
 }

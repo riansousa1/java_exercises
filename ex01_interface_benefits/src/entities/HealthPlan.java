@@ -17,7 +17,7 @@ public class HealthPlan implements Benefits {
 
 	@Override
 	public String descriptionBenefits() {
-		return "Benefits description: Smart 300";
+		return "HealthPlan price: R$ " + value;
 	}
 	
 }
