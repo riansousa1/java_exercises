@@ -2,6 +2,9 @@
 =======
 /.metadata/
 
+# Ignorar arquivos do IntelliJ IDEA
+.idea/
+
 # Ignorar arquivos do Eclipse
 .classpath
 .project
