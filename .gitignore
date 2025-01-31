@@ -4,6 +4,7 @@
 
 # Ignorar arquivos do IntelliJ IDEA
 .idea/
+*.iml
 
 # Ignorar arquivos do Eclipse
 .classpath
