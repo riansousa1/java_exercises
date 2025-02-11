@@ -46,7 +46,7 @@ de ler todos os dados, mostrar nome e pagamento de cada
 funcionário na mesma ordem em que foram digitados.
 
 
-**EXERCÍCIO 02 - Herança e Polimorfismo**
+**EXERCÍCIO 03 - Herança e Polimorfismo - Products list**
 
 
 Fazer um programa para ler os dados de N
@@ -62,6 +62,8 @@ acrescentados na etiqueta de preço conforme
 exemplo (próxima página). Para produtos
 importados, a taxa e alfândega deve ser
 acrescentada ao preço final do produto.
+
+![Exemplo de resultado](https://github.com/riansousa1/java_exercises/blob/main/imagem%20exercicios%20GIT%20products%203.png?raw=true)
 
 
 
