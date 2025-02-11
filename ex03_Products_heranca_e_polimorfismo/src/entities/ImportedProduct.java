@@ -18,7 +18,7 @@ public class ImportedProduct extends Product {
     }
 
     public double totalPrice() {
-        return getPrice() * customsFee;
+        return getPrice() + customsFee;
     }
 
     @Override
