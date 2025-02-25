@@ -88,5 +88,5 @@ Exemplo: uma empresa cuja renda foi 400000.00 e possui 25 funcionários, o impos
 400000 * 14% = 56000.00
 
 
-
+![Exemplo de resultado](img/taxes.png)
 
