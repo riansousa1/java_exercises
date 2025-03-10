@@ -90,3 +90,12 @@ Exemplo: uma empresa cuja renda foi 400000.00 e possui 25 funcionários, o impos
 
 ![Exemplo de resultado](img/taxes.png)
 
+**EXERCÍCIO 05 - Account - Excepitons**
+
+Fazer um programa para ler os dados de uma conta bancária e depois realizar um
+saque nesta conta bancária, mostrando o novo saldo. Um saque não pode ocorrer
+ou se não houver saldo na conta, ou se o valor do saque for superior ao limite de
+saque da conta. 
+
+![Exemplo de resultado](img/exceptionsExercise.png)
+
