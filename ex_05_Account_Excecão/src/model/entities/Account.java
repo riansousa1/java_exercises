@@ -44,18 +44,22 @@ public class Account {
         return balance += amount;
     }
 
-    public void withDraw(Double amount) {
-        if (balance <= 0.0) {
-            throw new DomainException("Negative balance");
+    public void withDrawValidation(Double amount) {
+        if (amount > withDrawLimit) {
+            throw new DomainException("The amount exceeds withdraw limit");
         }
         if (amount > balance) {
             throw new DomainException("Not enough balance");
         }
-        if (amount > withDrawLimit) {
-            throw new DomainException("The amount exceeds withdraw limit");
-        }
+    }
 
+    public void withDraw(Double amount) {
+        withDrawValidation(amount);
         balance -= amount;
+     }
+
+     public String toString() {
+        return "New balance: " + String.format("%.2f", balance);
      }
 
 }
